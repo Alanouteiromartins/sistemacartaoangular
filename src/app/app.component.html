@@ -1,0 +1,64 @@
+<div id="viewport">
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <header>
+      <a href="#">Sistema Web</a>
+    </header>
+    <ul class="nav">
+      <li>
+        <a class="item" href="#subitem1" data-bs-toggle="collapse" aria-expanded="false">
+          <div><i class="zmdi zmdi-shopping-cart"></i> Compras</div>
+          <div>></div>
+        </a>
+      </li>
+
+      <li class="collapse" id="subitem1">
+        <a href="#">Inserir</a>
+      </li>
+      <li class="collapse" id="subitem1">
+        <a href="#">Excluir</a>
+      </li>
+
+      <li>
+        <a class="item" href="#">
+          <div><i class="zmdi zmdi-card"></i> Cartões</div>
+          <div>></div>
+        </a>
+      </li>
+      <li>
+        <a class="item" routerLink="pessoas">
+          <div><i class="zmdi zmdi-accounts-alt"></i> Pessoas</div>
+          <div>></div>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="zmdi zmdi-view-dashboard"></i> Dashboard
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="zmdi zmdi-info-outline"></i> Sobre
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- Content -->
+  <div id="content">
+    <nav class="navbar navbar-default teste">
+      <div>
+        <ul class="nav navbar">
+          <li>
+            <a href="#"><i id="iconNotification" class="zmdi zmdi-notifications text-danger"></i>
+            </a>
+          </li>
+          <li><a href="#">Usuário</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+      <h1>Sistema vai aqui</h1>
+    </div>
+  </div>
+</div>
